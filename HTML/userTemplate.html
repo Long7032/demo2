@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Cá Nhân</title>
+
+    <link rel="stylesheet" href="../Frame/bootstrap-3.1.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/userTemplate.css">
+
+
+    <script src="../Frame/js/jquery-3.6.0.min.js"></script>
+    <script src="../Frame/js/bootstrap.min.js"></script>
+
+    <script src="../JavaScript/generalScript.js"></script>
+    <script src="../JavaScript/navbarGenerator.js"></script>
+    <script src="../JavaScript/changeTab/openPhoneTemplatePage.js"></script>
+    <script src="../JavaScript/changeTab/openSmartPhonePage.js"></script>
+    <script src="../JavaScript/changeTab/openTabletPage.js"></script>
+    <script src="../JavaScript/changeTab/openUserTemplatePage.js"></script>
+    <script src="../JavaScript/changeTab/openBlogPage.js"></script>
+    <script src="../JavaScript/changeTab/openNewsPage.js"></script>
+    <script src="../JavaScript/changeTab/openAboutUsPage.js"></script>
+    <script src="../JavaScript/userInfoGenerator.js"></script>
+    <script>
+        $(document).ready(function() {
+
+        })
+    </script>
+</head>
+
+<body>
+    <!--MAIN-->
+    <img src="../Image/background.webp" alt="">
+
+    <script>
+        window.onload = () => {
+            navbarGenerator()
+            userInfoGenerator()
+        }
+    </script>
+
+
+    <div class="container-fluid">
+        <nav>
+
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../Image/userIcon.jpg" alt="" class="">
+                </div>
+                <div class="col-md-6">
+                    <table>
+                        <caption>THÔNG TIN TÀI KHOẢN</caption>
+                        <tbody>
+                            <tr>
+                                <td>Họ tên</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Ngày sinh nhật</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Số điện thoại</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Tên tài khoản</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Mật khẩu</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Điểm Tích Lũy</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table">
+                    <tr>
+                        <th>Mã Đơn Hàng</th>
+                        <th>Tên Đơn Hàng</th>
+                        <th>Ngày Đặt</th>
+                        <th>Giá</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL-->
+    <div class="modal fade" role="dialog" id="modalSignIn">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Đăng Nhập</h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <label for="signInUserName" class="control-label col-xs-3">Tài Khoản:</label>
+                        <div class="col-xs-9">
+                            <input type="text" name="signInUserName" id="signInUserName" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="signInPassword" class="control-label col-xs-3">Mật Khẩu:</label>
+                        <div class="col-xs-9">
+                            <input type="password" name="signInPassword" id="signInPassword" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button id="btnModalSignIn">Đăng nhập</button>
+                        </div>
+                        <div class="col-xs-9">
+                            <p id="resultSignIn">*</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="modalSignUp">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Đăng Ký Tài Khoản</h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <label for="name" class="control-label col-xs-3">Họ tên:</label>
+                        <div class="col-xs-6">
+                            <input type="text" name="name" id="name" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultName">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="birthday" class="control-label col-xs-3">Ngày sinh:</label>
+                        <div class="col-xs-6">
+                            <input type="date" name="birthday" id="birthday" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultBirthday">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="phoneNumber" class="control-label col-xs-3">Số điện thoại:</label>
+                        <div class="col-xs-6">
+                            <input type="tel" name="phoneNumber" id="phoneNumber" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultPhoneNumber">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="email" class="control-label col-xs-3">Email:</label>
+                        <div class="col-xs-6">
+                            <input type="email" name="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultEmail">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="accountName" class="control-label col-xs-3">Tên tài khoản:</label>
+                        <div class="col-xs-6">
+                            <input type="text" name="accountName" id="accountName" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultAccountName">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="password" class="control-label col-xs-3">Mật khẩu:</label>
+                        <div class="col-xs-6">
+                            <input type="password" name="password" id="password" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultPassword">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="checkPassword" class="control-label col-xs-3">Nhập lại mật khẩu:</label>
+                        <div class="col-xs-6">
+                            <input type="password" name="checkPassword" id="checkPassword" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultCheckPassword">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button id="btnSignUp">Sign Up</button>
+                        </div>
+                        <div class="col-xs-9">
+                            <p id="resultSignUp"></p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

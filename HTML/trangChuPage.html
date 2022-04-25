@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="shortcut icon" href="../Image/logo_Favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../Frame/bootstrap-3.1.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/trangChu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <script src="../Frame/js/jquery-3.6.0.min.js"></script>
+    <script src="../Frame/js/bootstrap.min.js"></script>
+
+    <script src="../JavaScript/generalScript.js"></script>
+    <script src="../JavaScript/changeTab/openPhoneTemplatePage.js"></script>
+    <script src="../JavaScript/changeTab/openSmartPhonePage.js"></script>
+    <script src="../JavaScript/changeTab/openTabletPage.js"></script>
+    <script src="../JavaScript/changeTab/openUserTemplatePage.js"></script>
+    <script src="../JavaScript/changeTab/openBlogPage.js"></script>
+    <script src="../JavaScript/changeTab/openNewsPage.js"></script>
+    <script src="../JavaScript/changeTab/openAboutUsPage.js"></script>
+    <script src="../JavaScript/transferUserData.js"></script>
+</head>
+
+<body>
+    <!--MAIN-->
+    <img src="../Image/background.webp" alt="background">
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="trangChuPage.html">
+                        <img src="../Image/logo.png" alt="" width="100%" height="30px">
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a onclick="openSmartPhonePage(this)">Điện Thoại</a>
+                    </li>
+                    <li class="dropdown">
+                        <a onclick="openTabletPage(this)">Máy Tính Bảng</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tin Tức</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a onclick="openBlogPage(this)" target="_blank">Tin Tức Mới</a>
+                            </li>
+                            <li>
+                                <a onclick="openNewsPage(this)" target="_blank">Blog Thảo Luận</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a onclick="openAboutUsPage(this)">About Us</a>
+                    </li>
+                    <li>
+                        <form class="navbar-form" action="">
+                            <div class="form-group">
+                                <input type="search" class="form-control" placeholder="Nhập thông tin cần tìm:" name="search" size="30">
+                            </div>
+                            <button type="button" class="btn btn-primary">Tìm Kiếm</button>
+                        </form>
+                    </li>
+
+                </ul>
+                <div class="navbar-form navbar-right">
+                    <span>               
+						<a id="btnSignIn"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a>
+                    </span>
+                    <div class="dropdown">
+                        <a href="" id="btnUser" class="dropdown-toggle" data-toggle="dropdown">
+                            <span id="userName" class="glyphicon glyphicon-user"></span>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a onclick="openUserTemplatePage(this)">Thông tin cá nhân</a>
+                                </li>
+                                <li>
+                                    <a onclick="">Đơn đặt hàng</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="btnSignOut"><span class="glyphicon glyphicon-log-out"></span> Đăng Xuất</a>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <a onclick="openPhoneTemplatePage(this)">
+                                    <img src="../Image/jumbotron/800-200-800x200-122.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a onclick="openPhoneTemplatePage(this)">
+                                    <img src="../Image/jumbotron/13xanh-800-200-800x200-1.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a onclick="openPhoneTemplatePage(this)">
+                                    <img src="../Image/jumbotron/A73-800-200-800x200.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2"> <img src="../Image/jumbotron/1.jpg" alt="" width="100%">
+                </div>
+                <div class="col-md-2">
+                    <img src="../Image/jumbotron/2.jpg" alt="" width="100%">
+                </div>
+            </div>
+            <div class="row">
+                <h2>Top Smartphone Bán Chạy</h2>
+                <div class="col-md-3">
+                    <a onclick="openPhoneTemplatePage(this)">
+                        <img src="../Image/iphoneSE/bìa.jpg" alt="IPhoneSE" style="width: 100%; height: 80%;">
+                        <h4>iPhone SE 2022</h4>
+                    </a>
+                    <p>
+                        <strong>10.600.000<u>đ</u></strong>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <a onclick="openPhoneTemplatePage(this)">
+                        <img src="../Image/IPhone12Mini/bìa.jpg" alt="IPhone 12 Mini" style="width: 100%; height: 80%;">
+                        <h4>IPhone 12 Mini</h4>
+                    </a>
+                    <p>
+                        <strong>16.500.000<u>đ</u></strong>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <a onclick="openPhoneTemplatePage(this)">
+                        <img src="../Image/iphone11/bia.jpg" alt="IPhone 11" style="width: 100%; height: 80%;">
+                        <h4>IPhone 11</h4>
+                    </a>
+                    <p>
+                        <strong>15.990.000<u>đ</u></strong>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <a onclick="openPhoneTemplatePage(this)">
+                        <img src="../Image/IPhone13/bìa.jpg" alt="IPhone 13" style="width: 100%; height: 80%;">
+                        <h4>iPhone 13 Pro Max 128GB</h4>
+                    </a>
+                    <p>
+                        <strong>25.500.000<u>đ</u></strong>
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <h2>Top Máy Tính Bảng Bán Chạy</h2>
+                <div class="col-md-3">
+                    <a onclick="openPhoneTemplatePage(this)">
+                        <img src="../Image/iPad_Pro_M1/bia.jpg" alt="Ipad Pro M1" style="width: 100%; height: 80%;">
+                        <h4>Ipad Pro M1</h4>
+                    </a>
+                    <p>
+                        <strong>24.990.000<u>đ</u></strong>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <a onclick="openPhoneTemplatePage(this)">
+                        <img src="../Image/samsung_galaxy_tab8/bia.jpg" alt="Samsung Galaxy Tab S8" style="width: 100%; height: 80%;">
+                        <h4>Samsung Galaxy Tab S8</h4>
+                    </a>
+                    <p>
+                        <strong>20.990.000<u>đ</u></strong>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <a onclick="openPhoneTemplatePage(this)">
+                        <img src="../Image/samsung_galaxy_tab_s7/bia.jpg" alt="Samsung Galaxy Tab S7" style="width: 100%; height: 80%;">
+                        <h4>Samsung Galaxy Tab S7</h4>
+                    </a>
+                    <p>
+                        <strong>28.990.000<u>đ</u></strong>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <a onclick="openPhoneTemplatePage(this)">
+                        <img src="../Image/Ipad_9/bia.jpg" alt="Ipad 9" style="width: 100%; height: 80%;">
+                        <h4>Ipad 9</h4>
+                    </a>
+                    <p>
+                        <strong>10.690.000<u>đ</u></strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid footer">
+            <div class="col-md-6">
+                <h3>Contact Us</h3>
+                <p>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span>12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh</span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-phone-alt"></span>
+                    <span>(078) 01059998</span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-earphone"></span>
+                    <span>(028) 38940390</span>
+                </p>
+                <p>
+                    <span class=" glyphicon glyphicon-envelope"></span>
+                    <span>NLStore@gmail.com</span>
+                </p>
+                <p>
+                    <span class=" glyphicon glyphicon-globe"></span>
+                    <span>https://NLStore.com</span>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h3>Chức Năng</h3>
+                <ul>
+                    <li>
+                        <a href="../HTML/trangChuPage.html">Trang Chủ</a>
+                    </li>
+                    <li>
+                        <a href="../HTML/smartPhonePage.html">Điện Thoại</a>
+                    </li>
+                    <li>
+                        <a href="../HTML/tabletPage.html">Máy Tính Bảng</a>
+                    </li>
+                    <li>
+                        <a href="../HTML/newsPage.html">Tin Tức</a>
+                    </li>
+                    <li>
+                        <a href="../HTML/blogPage.html">Blog Thảo Luận</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Kết Nối Với Chúng Tôi</h3>
+                <a href="https://www.facebook.com/">
+                    <i class='fab fa-facebook'></i>
+                </a>
+                <a href="https://twitter.com/">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+            </div>
+        </footer>
+    </div>
+
+    <!--MODAL-->
+    <div class="modal fade" role="dialog" id="modalSignIn">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title" style="text-align: center;">Đăng Nhập</h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <label for="signInUserName" class="control-label col-xs-3">Tài Khoản:</label>
+                        <div class="col-xs-9">
+                            <input type="text" name="signInUserName" id="signInUserName" class="form-control" value="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="signInPassword" class="control-label col-xs-3">Mật Khẩu:</label>
+                        <div class="col-xs-9">
+                            <input type="password" name="signInPassword" id="signInPassword" class="form-control" value="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button id="btnModalSignIn">Đăng nhập</button>
+                        </div>
+                        <div class="col-xs-9">
+                            <p id="resultSignIn">*</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Nếu chưa có tài khoản thì đăng ký tại
+                                <a href="#" id="btnSignUp">đây</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="modalSignUp">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 style="text-align: center;">Đăng Ký Tài Khoản</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label for="name" class="control-label col-xs-3">Họ tên:</label>
+                        <div class="col-xs-6">
+                            <input type="text" name="name" id="name" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultName">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="birthday" class="control-label col-xs-3">Ngày sinh:</label>
+                        <div class="col-xs-6">
+                            <input type="date" name="birthday" id="birthday" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultBirthday">*</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <label for="gender" class="control-label col-xs-3 ">Giới tính:</label>
+                        <div class="col-xs-6 ">
+                            <input type="radio" name="gender" id="gender" required><span>Nam</span>
+                            <input type="radio" name="gender" id="gender" required><span>Nữ</span>
+                        </div>
+                        <div class="col-xs-3 ">
+                            <p id="resultBirthday ">*</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="phoneNumber" class="control-label col-xs-3">Số điện thoại:</label>
+                        <div class="col-xs-6">
+                            <input type="tel" name="phoneNumber" id="phoneNumber" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultPhoneNumber">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="email" class="control-label col-xs-3">Email:</label>
+                        <div class="col-xs-6">
+                            <input type="email" name="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultEmail">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="accountName" class="control-label col-xs-3">Tên tài khoản:</label>
+                        <div class="col-xs-6">
+                            <input type="text" name="accountName" id="accountName" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultAccountName">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="password" class="control-label col-xs-3">Mật khẩu:</label>
+                        <div class="col-xs-6">
+                            <input type="password" name="password" id="password" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultPassword">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="checkPassword" class="control-label col-xs-3">Nhập lại mật khẩu:</label>
+                        <div class="col-xs-6">
+                            <input type="password" name="checkPassword" id="checkPassword" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultCheckPassword">*</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <button id="btnModalSignUp">Sign Up</button>
+                            </div>
+                            <div class="col-xs-9">
+                                <p id="resultSignUp"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="shortcut icon" href="../Image/logo_Favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../Frame/bootstrap-3.1.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/aboutUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <script src="../Frame/js/jquery-3.6.0.min.js"></script>
+    <script src="../Frame/js/bootstrap.min.js"></script>
+
+    <script src="../JavaScript/generalScript.js"></script>
+    <script src="../JavaScript/navbarGenerator.js"></script>
+    <script src="../JavaScript/changeTab/openPhoneTemplatePage.js"></script>
+    <script src="../JavaScript/changeTab/openSmartPhonePage.js"></script>
+    <script src="../JavaScript/changeTab/openTabletPage.js"></script>
+    <script src="../JavaScript/changeTab/openUserTemplatePage.js"></script>
+    <script src="../JavaScript/changeTab/openBlogPage.js"></script>
+    <script src="../JavaScript/changeTab/openNewsPage.js"></script>
+    <script src="../JavaScript/changeTab/openAboutUsPage.js"></script>
+    <script src="../JavaScript/transferUserData.js"></script>
+</head>
+
+<body>
+    <!-- MAIN -->
+    <script>
+        window.onload = () => {
+            navbarGenerator()
+        }
+    </script>
+
+    <img src="https://img.freepik.com/free-vector/blue-copy-space-digital-background_23-2148821698.jpg?w=2000" alt="">
+    <div class="container-fluid">
+        <nav>
+
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <table>
+                        <thead>
+                            <h3>Thông tin cá nhân</h3>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tên</td>
+                                <td>Lê Trọng Nghĩa</td>
+                            </tr>
+                            <tr>
+                                <td>Mã số sinh viên</td>
+                                <td>20095041</td>
+                            </tr>
+                            <tr>
+                                <td>Tuổi</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Lớp</td>
+                                <td>DHKTPM16GTT</td>
+                            </tr>
+                            <tr>
+                                <td>Học vấn</td>
+                                <td>Đại học</td>
+                            </tr>
+                            <tr>
+                                <td>Thông tin liên lạc</td>
+                                <td>
+                                    <a href="https://www.facebook.com/profile.php?id=100011542234309">
+                                        <i class='fab fa-facebook'></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <img src="../Image/Avatar/MSSV.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <table>
+                        <thead>
+                            <h3>Thông tin cá nhân</h3>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tên</td>
+                                <td>Nguyễn Đức Long</td>
+                            </tr>
+                            <tr>
+                                <td>Mã số sinh viên</td>
+                                <td>20105821</td>
+                            </tr>
+                            <tr>
+                                <td>Tuổi</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Lớp</td>
+                                <td>DHKTPM16GTT</td>
+                            </tr>
+                            <tr>
+                                <td>Học vấn</td>
+                                <td>Đại học</td>
+                            </tr>
+                            <tr>
+                                <td>Thông tin liên lạc</td>
+                                <td>
+                                    <a href="https://www.facebook.com/profile.php?id=100011037524132">
+                                        <i class='fab fa-facebook'></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <img src="../Image/Avatar/z2867070344216_95ae09d297e7f6234c71715916de7b02.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL-->
+    <div class="modal fade" role="dialog" id="modalSignIn">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Đăng Nhập</h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <label for="signInUserName" class="control-label col-xs-3">Tài Khoản:</label>
+                        <div class="col-xs-9">
+                            <input type="text" name="signInUserName" id="signInUserName" class="form-control" value="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="signInPassword" class="control-label col-xs-3">Mật Khẩu:</label>
+                        <div class="col-xs-9">
+                            <input type="password" name="signInPassword" id="signInPassword" class="form-control" value="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button id="btnModalSignIn">Đăng nhập</button>
+                        </div>
+                        <div class="col-xs-9">
+                            <p id="resultSignIn">*</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Nếu chưa có tài khoản thì đăng ký tại
+                                <a href="#" id="btnSignUp">đây</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="modalSignUp">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Đăng Ký Tài Khoản</h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <label for="name" class="control-label col-xs-3">Họ tên:</label>
+                        <div class="col-xs-6">
+                            <input type="text" name="name" id="name" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultName">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="birthday" class="control-label col-xs-3">Ngày sinh:</label>
+                        <div class="col-xs-6">
+                            <input type="date" name="birthday" id="birthday" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultBirthday">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="phoneNumber" class="control-label col-xs-3">Số điện thoại:</label>
+                        <div class="col-xs-6">
+                            <input type="tel" name="phoneNumber" id="phoneNumber" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultPhoneNumber">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="email" class="control-label col-xs-3">Email:</label>
+                        <div class="col-xs-6">
+                            <input type="email" name="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultEmail">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="accountName" class="control-label col-xs-3">Tên tài khoản:</label>
+                        <div class="col-xs-6">
+                            <input type="text" name="accountName" id="accountName" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultAccountName">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="password" class="control-label col-xs-3">Mật khẩu:</label>
+                        <div class="col-xs-6">
+                            <input type="password" name="password" id="password" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultPassword">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="checkPassword" class="control-label col-xs-3">Nhập lại mật khẩu:</label>
+                        <div class="col-xs-6">
+                            <input type="password" name="checkPassword" id="checkPassword" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultCheckPassword">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button id="btnModalSignUp">Sign Up</button>
+                        </div>
+                        <div class="col-xs-9">
+                            <p id="resultSignUp"></p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

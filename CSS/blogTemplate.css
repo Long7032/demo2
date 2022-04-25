@@ -1,0 +1,80 @@
+body>img:nth-child(1) {
+    z-index: -1;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid nav {
+    background-color: black;
+}
+
+.container-fluid .container {
+    color: white;
+}
+
+.container {
+    padding: 10px;
+    padding-bottom: 60px;
+}
+
+.container h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.container h4 {
+    text-align: justify;
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+.container p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0px 0px 0px;
+}
+
+footer .col-md-3 ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 16x;
+}
+
+footer .col-md-3 ul li a {
+    color: white;
+}
+
+footer .col-md-3 ul li a:hover {
+    text-decoration: none;
+    color: red
+}
+
+footer h3 {
+    font-size: 30px;
+    text-align: left;
+}
+
+footer .col-md-3 i {
+    font-size: 36px;
+    margin-right: 25px;
+    color: white;
+}
+
+footer .col-md-3 i:hover {
+    font-size: 36px;
+    margin-right: 25px;
+    color: rgb(124, 124, 255);
+}

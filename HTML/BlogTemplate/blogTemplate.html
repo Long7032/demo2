@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Thảo Luận</title>
+    <link rel="shortcut icon" href="../../Image/logo_Favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../Frame/bootstrap-3.1.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../../CSS/blogTemplate.css">
+
+    <script src="../../Frame/js/jquery-3.6.0.min.js"></script>
+    <script src="../../Frame/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <img src=" ../../Image/background.webp" alt="">
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../trangChuPage.html">
+                        <img src="../../Image/logo.png" alt="" width="100%" height="30px">
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a onclick="openSmartPhonePage(this)">Điện Thoại</a>
+                    </li>
+                    <li class="dropdown">
+                        <a onclick="openTabletPage(this)">Máy Tính Bảng</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tin Tức</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a onclick="openBlogPage(this)" target="_blank">Tin Tức Mới</a>
+                            </li>
+                            <li>
+                                <a onclick="openNewsPage(this)" target="_blank">Blog Thảo Luận</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a onclick="openAboutUsPage(this)">About Us</a>
+                    </li>
+                    <li>
+                        <form class="navbar-form" action="">
+                            <div class="form-group">
+                                <input type="search" class="form-control" placeholder="Nhập thông tin cần tìm:" name="search" size="30">
+                            </div>
+                            <button type="button" class="btn btn-primary">Tìm Kiếm</button>
+                        </form>
+                    </li>
+
+                </ul>
+                <div class="navbar-form navbar-right">
+                    <span>               
+						<a id="btnSignIn"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a>
+                    </span>
+                    <div class="dropdown">
+                        <a href="" id="btnUser" class="dropdown-toggle" data-toggle="dropdown">
+                            <span id="userName" class="glyphicon glyphicon-user"></span>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a onclick="openUserTemplatePage(this)">Thông tin cá nhân</a>
+                                </li>
+                                <li>
+                                    <a onclick="">Đơn đặt hàng</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="btnSignOut"><span class="glyphicon glyphicon-log-out"></span> Đăng Xuất</a>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h2>So Sánh Cáp Sạc Nhanh Và Cáp Thường</h2>
+            <hr>
+            <p>
+                <b>
+                    Cáp sạc nhanh và cáp thường có gì khác nhau, tại sao có loại cáp chỉ sạc được 5W, có loại cáp lại sạc được cả 100W?
+                </b>
+            </p>
+            <hr>
+            <p>Để sạc nhanh cho điện thoại hay máy tính, ngoài việc cần có một củ sạc nhanh thì cáp sạc nhanh cũng là thứ không thể thiếu. Cáp sạc cho các thiết bị điện tử nó không đơn giản như một sợi dây điện, không phải cứ càng to thì chịu tải càng lớn,
+                sạc càng nhanh. Một sợi cáp sạc nhanh hay sạc chậm nó còn phụ thuộc vào nhiều yếu tố khác mà chúng ta sẽ cùng tìm hiểu trong bài viết dưới đây.</p>
+            <hr>
+            <h4>Sạc nhanh và sạc thường </h4>
+            <p>Trước khi đi vào so sánh cáp sạc nhanh và cáp thường chúng ta cần tìm hiểu trước và sạc nhanh về sạc thường. Thật ra không có một ranh giới hay quy chuẩn rõ ràng nào về sạc nhanh hay sạc chậm, phần lớn nó phụ thuộc vào hệ quy chiếu mà chúng
+                ta xét đến.</p>
+            <p>Ví dụ, khoảng 5 - 10 năm trước, sạc 5W rất phổ biến và nó gần như là một chuẩn sạc phổ thông của hầu hết smartphone, điện thoại phổ thông lẫn các loại thiết bị công nghệ. Khi đó, các chuẩn như QC với dòng điện 15W, 18W, hay đôi khi 12.5W đã
+                được gọi là sạc nhanh.</p>
+
+            <p>Hiện tại thì thời thế thay đổi, đã có những điện thoại hỗ trợ sạc hàng trăm W, 15 hay 18W bây giờ là mức tối thiểu có thể chấp nhận, khó có thể coi là sạc nhanh được nữa. Một ví dụ khác, với những chiếc đồng hồ thông minh, viên pin của chúng
+                chỉ khoảng vài trăm mAh, sạc 5W với chúng đã là rất nhanh rồi.</p>
+            <p>Như vậy, sạc nhanh hay sạc thường phụ thuộc vào hệ quy chiếu mà chút ta xét. </p>
+            <h4>Cáp sạc nhanh và cáp thường</h4>
+            <p>Từ phân tích ở trên, dễ thấy chúng ta không có một ranh giới rõ ràng nào về khái niệm cáp sạc nhanh và cáp thường. Tuy nhiên chúng ta vẫn có thể dựa vào một số yếu tố khác để phân tích về hai loại cáp sạc này.</p>
+            <p>Ví dụ, cáp USB-A to microUSB thì thường hỗ trợ công suất chỉ 5 - 10W, trừ những sợi cáp được thiết kế riêng cho một số chuẩn sạc nhanh như QC hoặc chuẩn sạc nhanh của các hãng như VOOC của OPPO. Cáp USB-C to C thì thường hỗ trợ >60W, cáp USB-A
+                to lightning thì thường hỗ trợ 5W - 12.5W, cáp USB-C to Lightning thì hỗ trợ 18W-20W.</p>
+            <p>Với những nhà sản xuất uy tín, họ thường công bố công suất tối đa cùng băng thông dữ liệu tối đa mà sợi cáp đó hỗ trợ, bạn không nên mua những sợi cáp thiếu thông tin, thông tin không rõ ràng hoặc không rõ nguồn gốc. Những sợi cáp này có thể
+                không đạt tiêu chuẩn chất lượng, không hỗ trợ dòng điện cao dẫn đến nguy cơ hư hỏng thiết bị.</p>
+            <h4>Cáp sạc nhanh có gì khác cáp thường</h4>
+            <p>Cáp sạc nhanh không chỉ sở hữu lõi đồng lớn hơn giúp chịu được dòng điện cao hơn mà đi kèm với đó là cả con chip tích hợp, số lõi nhiều hơn, số chân tiếp xúc nhiều hơn và một số yếu tố khác.</p>
+            <p>Ví dụ, sạc nhanh của OPPO thường dùng cáp riêng do hãng thiết kế với một số chân tiếp xúc khác biệt, sợi cáp cũng có chip để nhận diện củ sạc và thiết bị phù hợp. Với những hãng sử dụng công nghệ sạc riêng, bạn cần mua đúng cáp sạc chính hãng
+                để tận dụng được công suất sạc cao nhất.</p>
+            <p>Rất nhiều thiết bị gần đây tương thích với sạc nhanh PD, khi đó bạn cần dùng một củ sạc có đầu ra Type-C hỗ trợ PD và một sợi cáp sạc Type-C để sạc nhanh. Trên thực tế, hầu hết các loại cáp sạc USB-C to USB-C hoặc USB-C to Lightning của các
+                nhà sản xuất uy tín đều hỗ trợ sạc nhanh nên bạn không cần quan tâm quá nhiều.</p>
+            <p>Trên những cáp sạc chất lượng cũng luôn có một con chip an toàn, với cáp Lightning thì cần một con chip để xác thực nó có phải phụ kiện MFi (make for idevice) hay không, những sợi cáp sạc nhanh Power Delivery cũng có chip để đảm bảo an toàn.</p>
+            <p>Những sợi cáp sạc nhanh vẫn tương thích ngược các bộ sạc thường và những máy không hỗ trợ sạc nhanh. Những sợi cáp sạc thường vẫn sạc được cho các thiết bị sạc nhanh, tuy nhiên nó sẽ không nhận đủ công suất và tất nhiên sẽ tốn thời gian sạc.
+                Nếu hỏi dùng cáp sạc thường cho máy hỗ trợ sạc nhanh có nguy hiểm không thì theo mình là không, vì những loại cáp chất lượng đều có chip để tự động điều chỉnh dòng điện cho phù hợp.</p>
+            <p>Mấu chốt quan trọng nhất vẫn là chọn một sợi cáp từ những nhà sản xuất uy tín hoặc chọn cáp sạc chính hãng từ nhà sản xuất điện thoại, máy tính mà bạn đang sử dụng.</p>
+        </div>
+
+        <footer class="container-fluid footer">
+            <div class="col-md-6">
+                <h3>Contact Us</h3>
+                <p>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span>12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh</span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-phone-alt"></span>
+                    <span>(078) 01059998</span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-earphone"></span>
+                    <span>(028) 38940390</span>
+                </p>
+                <p>
+                    <span class=" glyphicon glyphicon-envelope"></span>
+                    <span>NLStore@gmail.com</span>
+                </p>
+                <p>
+                    <span class=" glyphicon glyphicon-globe"></span>
+                    <span>https://NLStore.com</span>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h3>Chức Năng Chính</h3>
+                <ul>
+                    <li>
+                        <a href="../trangChuPage.html">Trang Chủ</a>
+                    </li>
+                    <li>
+                        <a href="../smartPhonePage.html">Điện Thoại</a>
+                    </li>
+                    <li>
+                        <a href="../tabletPage.html">Máy Tính Bảng</a>
+                    </li>
+                    <li>
+                        <a href="../newsPage.html">Tin Tức</a>
+                    </li>
+                    <li>
+                        <a href="../blogPage.html">Blog Thảo Luận</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Kết Nối Với Chúng Tôi</h3>
+                <a href="https://www.facebook.com/">
+                    <i class='fab fa-facebook'></i>
+                </a>
+                <a href="https://twitter.com/">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
